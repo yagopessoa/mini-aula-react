@@ -57,10 +57,10 @@ export default class Homepage extends Component {
 
         if(isLoading) return <CircularProgress style={{color: '#FFF'}} />
         return(
-            <div style={{width: '50%', padding: 32}} >
+            <div style={{width: '100%', paddingTop: 32, display: 'flex', flexDirection: 'column', alignItems: 'center'}} >
                 Lista de Pokémons
                 <div className="home-page">
-                    <List style={{marginTop: 32, maxHeight: 500, overflowY: 'auto'}} >
+                    <List style={{maxHeight: 500, overflowY: 'auto'}} >
                         {this.renderList()}
                     </List>
                 </div>
